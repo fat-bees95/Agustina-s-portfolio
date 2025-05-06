@@ -1,0 +1,207 @@
+body {
+  background: #f6d3d3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffe0e9;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 4px solid #ccc;
+}
+
+.my-portfolio {
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #aaa;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  font-size: 2.5em;
+  color: #222;
+}
+
+p {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 0;
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-box {
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #222;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .project-box {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.contact {
+  margin-top: 60px;
+  background: #ffe0e9;
+  padding: 60px 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.contact-form {
+  width: 100%
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 240px;
+}
+
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #e0707c;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #c85f6d;
+}
+
+footer {
+  background-color: #ffe0e9;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 2px solid #ccc;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
